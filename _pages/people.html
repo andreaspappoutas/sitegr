@@ -12,11 +12,11 @@ layout: single
 {% assign people = site.people | sort: "rank" %}
 {% for post in people %}
   {% if post.rank == 1 %}
+      <div id="test">
+        {% include archive-people.html %}
+      <div>
       <script>
-        var testing= "{% include archive-people.html %}";
-     document.getElementById("1st-rank").insertAdjacentHTML("afterend", 
-                testing);
+            document.getElementById('1st-rank').appendChild(document.getElementById('test'));
       </script>
-     
   {% endif %}
 {% endfor %}
