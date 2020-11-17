@@ -17,7 +17,7 @@ layout: single
 {% assign people = site.people | sort: "rank" %}
 {% for post in people %}
   {% if post.rank == 1 %}
-      <div id="{{ post.ref }}">
+      <div id="{{ post.ref }}" style="float: left;">
         {% include archive-people.html %}
       <div>
       <script>
@@ -25,7 +25,7 @@ layout: single
       </script>
   {% endif %}
   {% if post.rank == 2 %}
-      <div id="{{ post.ref }}">
+      <div id="{{ post.ref }}" style="float: left;">
         {% include archive-people.html %}
       <div>
       <script>
