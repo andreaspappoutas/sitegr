@@ -9,6 +9,18 @@ layout: single
 </div>
 <div id="2nd-rank" class="grid-container" style="float: inherit;"><h1>2nd rank</h1></br>
 </div>
+<div id="3rd-rank" class="grid-container" style="float: inherit;"><h1>3rd rank</h1></br>
+</div>
+<div id="4th-rank" class="grid-container" style="float: inherit;"><h1>4th rank</h1></br>
+</div>
+<div id="5th-rank" class="grid-container" style="float: inherit;"><h1>5th rank</h1></br>
+</div>
+<div id="6th-rank" class="grid-container" style="float: inherit;"><h1>6th rank</h1></br>
+</div>
+<div id="7th-rank" class="grid-container" style="float: inherit;"><h1>7th rank</h1></br>
+</div>
+<div id="8th-rank" class="grid-container" style="float: inherit;"><h1>8th rank</h1></br>
+</div>
 
 
 {% assign people = site.people | sort: "rank" %}
@@ -27,6 +39,60 @@ layout: single
       <div>
       <script>
             document.getElementById('2nd-rank').appendChild(document.getElementById( "{{ post.ref }}" ));
+      </script>
+  {% endif %}
+  {% endif %}
+  {% if post.rank == 3 %}
+      <div id="{{ post.ref }}" style="float: left;">
+        {% include archive-people.html %}
+      <div>
+      <script>
+            document.getElementById('3rd-rank').appendChild(document.getElementById( "{{ post.ref }}" ));
+      </script>
+  {% endif %}
+   {% endif %}
+  {% if post.rank == 4 %}
+      <div id="{{ post.ref }}" style="float: left;">
+        {% include archive-people.html %}
+      <div>
+      <script>
+            document.getElementById('4th-rank').appendChild(document.getElementById( "{{ post.ref }}" ));
+      </script>
+  {% endif %}
+  {% endif %}
+  {% if post.rank == 5 %}
+      <div id="{{ post.ref }}" style="float: left;">
+        {% include archive-people.html %}
+      <div>
+      <script>
+            document.getElementById('5th-rank').appendChild(document.getElementById( "{{ post.ref }}" ));
+      </script>
+  {% endif %}
+  {% endif %}
+  {% if post.rank == 6 %}
+      <div id="{{ post.ref }}" style="float: left;">
+        {% include archive-people.html %}
+      <div>
+      <script>
+            document.getElementById('6th-rank').appendChild(document.getElementById( "{{ post.ref }}" ));
+      </script>
+  {% endif %}
+  {% endif %}
+  {% if post.rank == 7 %}
+      <div id="{{ post.ref }}" style="float: left;">
+        {% include archive-people.html %}
+      <div>
+      <script>
+            document.getElementById('7th-rank').appendChild(document.getElementById( "{{ post.ref }}" ));
+      </script>
+  {% endif %}
+  {% endif %}
+  {% if post.rank == 8 %}
+      <div id="{{ post.ref }}" style="float: left;">
+        {% include archive-people.html %}
+      <div>
+      <script>
+            document.getElementById('8th-rank').appendChild(document.getElementById( "{{ post.ref }}" ));
       </script>
   {% endif %}
 {% endfor %}
