@@ -5,95 +5,103 @@ permalink: "/people/"
 layout: single
 ---
 
-<div id="1st-rank" class="grid-container" style="float: inherit; display: none;""><h1>1st rank</h1></br>
+<div id="1st-rank" class="grid-container" style="float: inherit; display: none;" ><h1>1st rank</h1></br>
 </div>
 <div id="2nd-rank" class="grid-container" style="float: inherit; display: none;"><h1>2nd rank</h1></br>
 </div>
-<div id="3rd-rank" class="grid-container" style="float: inherit;" display: none;><h1>3rd rank</h1></br>
+<div id="3rd-rank" class="grid-container" style="float: inherit; display: none;"><h1>3rd rank</h1></br>
 </div>
-<div id="4th-rank" class="grid-container" style="float: inherit;" display: none;><h1>4th rank</h1></br>
+<div id="4th-rank" class="grid-container" style="float: inherit; display: none;" ><h1>4th rank</h1></br>
 </div>
-<div id="5th-rank" class="grid-container" style="float: inherit;" display: none;><h1>5th rank</h1></br>
+<div id="5th-rank" class="grid-container" style="float: inherit; display: none;" ><h1>5th rank</h1></br>
 </div>
-<div id="6th-rank" class="grid-container" style="float: inherit;" display: none;><h1>6th rank</h1></br>
+<div id="6th-rank" class="grid-container" style="float: inherit; display: none;" ><h1>6th rank</h1></br>
 </div>
-<div id="7th-rank" class="grid-container" style="float: inherit;" display: none;><h1>7th rank</h1></br>
+<div id="7th-rank" class="grid-container" style="float: inherit; display: none;" ><h1>7th rank</h1></br>
 </div>
-<div id="8th-rank" class="grid-container" style="float: inherit;" display: none;><h1>8th rank</h1></br>
+<div id="8th-rank" class="grid-container" style="float: inherit; display: none;" ><h1>8th rank</h1></br>
 </div>
 
 
 {% assign people = site.people | sort: "rank" %}
 {% for post in people %}
   {% if post.rank == 1 %}
-      document.getElementById("1st-rank").style.display = "inherit";
+      
       <div id="{{ post.ref }}" style="float: left;" class="grid__item" >
         {% include archive-people.html %}
       <div>
       <script>
+            document.getElementById("1st-rank").style.display = "inherit";
             document.getElementById('1st-rank').appendChild(document.getElementById( "{{ post.ref }}" ));
       </script>
   {% endif %}
   {% if post.rank == 2 %}
-      document.getElementById("2nd-rank").style.display = "inherit";
+      
       <div id="{{ post.ref }}" style="float: left;" class="grid__item" >
         {% include archive-people.html %}
       <div>
       <script>
+            document.getElementById("2nd-rank").style.display = "inherit";
             document.getElementById('2nd-rank').appendChild(document.getElementById( "{{ post.ref }}" ));
       </script>
   {% endif %}
   {% if post.rank == 3 %}
-      document.getElementById("3rd-rank").style.display = "inherit";
+      
       <div id="{{ post.ref }}" style="float: left;" class="grid__item" >
         {% include archive-people.html %}
       <div>
       <script>
+            document.getElementById("3rd-rank").style.display = "inherit";
             document.getElementById('3rd-rank').appendChild(document.getElementById( "{{ post.ref }}" ));
       </script>
   {% endif %}
   {% if post.rank == 4 %}
-      document.getElementById("4th-rank").style.display = "inherit";
+      
       <div id="{{ post.ref }}" style="float: left;" class="grid__item" >
         {% include archive-people.html %}
       <div>
       <script>
+            document.getElementById("4th-rank").style.display = "inherit";
             document.getElementById('4th-rank').appendChild(document.getElementById( "{{ post.ref }}" ));
       </script>
   {% endif %}
   {% if post.rank == 5 %}
-      document.getElementById("5th-rank").style.display = "inherit";
+      
       <div id="{{ post.ref }}" style="float: left;" class="grid__item" >
         {% include archive-people.html %}
       <div>
       <script>
+            document.getElementById("5th-rank").style.display = "inherit";
             document.getElementById('5th-rank').appendChild(document.getElementById( "{{ post.ref }}" ));
       </script>
   {% endif %}
   {% if post.rank == 6 %}
-      document.getElementById("6th-rank").style.display = "inherit";
+      
       <div id="{{ post.ref }}" style="float: left;" class="grid__item" >
         {% include archive-people.html %}
       <div>
       <script>
+            document.getElementById("6th-rank").style.display = "inherit";
             document.getElementById('6th-rank').appendChild(document.getElementById( "{{ post.ref }}" ));
       </script>
   {% endif %}
   {% if post.rank == 7 %}
-      document.getElementById("7th-rank").style.display = "inherit";
+      
       <div id="{{ post.ref }}" style="float: left;" class="grid__item" >
         {% include archive-people.html %}
       <div>
       <script>
+            document.getElementById("7th-rank").style.display = "inherit";
             document.getElementById('7th-rank').appendChild(document.getElementById( "{{ post.ref }}" ));
       </script>
   {% endif %}
   {% if post.rank == 8 %}
-      document.getElementById("8th-rank").style.display = "inherit";
+      
       <div id="{{ post.ref }}" style="float: left;" class="grid__item" >
         {% include archive-people.html %}
       <div>
       <script>
+            document.getElementById("8th-rank").style.display = "inherit";
             document.getElementById('8th-rank').appendChild(document.getElementById( "{{ post.ref }}" ));
       </script>
   {% endif %}
