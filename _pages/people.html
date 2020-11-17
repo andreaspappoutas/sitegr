@@ -10,7 +10,7 @@ layout: single
   {% if test.rank == 1 %}
   <h1>1st Rank</h1>
     {% for post in people %}
-        {% if post.rank == 1 %}
+        {% if post.author == test.author %}
           {% include archive-people.html %}
         {% endif %}
     {% endfor %}
