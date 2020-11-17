@@ -8,7 +8,7 @@ layout: single
 {% assign people = site.people | sort: "rank" %}
 {% for post in people %}
   {% if post.rank == "1" %}
-    To rank en na eni touton dame {{ post.rank }}
-    {% include archive-people.html %}
+     <h1>1st rank </h1>
+     {% include archive-people.html %}
   {% endif %}
-{% endfor %}  
+{% endfor %}
