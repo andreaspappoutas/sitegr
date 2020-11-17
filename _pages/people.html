@@ -8,6 +8,9 @@ layout: single
 <div id="1st-rank"><h1>1st rank</h1></br>
 </div>
 
+<div id="2nd-rank"><h1>2nd rank</h1></br>
+</div>
+
 
 {% assign people = site.people | sort: "rank" %}
 {% for post in people %}
@@ -17,6 +20,14 @@ layout: single
       <div>
       <script>
             document.getElementById('1st-rank').appendChild(document.getElementById( "{{ post.ref }}" ));
+      </script>
+  {% endif %}
+  {% if post.rank == 2 %}
+      <div id="{{ post.ref }}">
+        {% include archive-people.html %}
+      <div>
+      <script>
+            document.getElementById('2nd-rank').appendChild(document.getElementById( "{{ post.ref }}" ));
       </script>
   {% endif %}
 {% endfor %}
