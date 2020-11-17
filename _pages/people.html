@@ -7,7 +7,42 @@ layout: single
 
 {% assign people = site.people | sort: "rank" %}
 {% for post in people %}
-  {% if post.rank %}
+  <h1>Rank1</h1>
+  {% if post.rank =="1" %}
+    {% include archive-people.html %}
+  {% endif %}
+<h1>Rank2</h1>
+{% if post.rank =="2" %}
+    To rank en na eni touton dame {{ post.rank }}
+    {% include archive-people.html %}
+  {% endif %}
+<h1>Rank3</h1>
+{% if post.rank =="3" %}
+    To rank en na eni touton dame {{ post.rank }}
+    {% include archive-people.html %}
+  {% endif %}
+<h1>Rank4</h1>
+{% if post.rank =="4" %}
+    To rank en na eni touton dame {{ post.rank }}
+    {% include archive-people.html %}
+  {% endif %}
+<h1>Rank5</h1>
+{% if post.rank =="5" %}
+    To rank en na eni touton dame {{ post.rank }}
+    {% include archive-people.html %}
+  {% endif %}
+<h1>Rank6</h1>
+{% if post.rank =="6" %}
+    To rank en na eni touton dame {{ post.rank }}
+    {% include archive-people.html %}
+  {% endif %}
+<h1>Rank7</h1>
+{% if post.rank =="7" %}
+    To rank en na eni touton dame {{ post.rank }}
+    {% include archive-people.html %}
+  {% endif %}
+<h1>Rank8</h1>
+{% if post.rank =="8" %}
     To rank en na eni touton dame {{ post.rank }}
     {% include archive-people.html %}
   {% endif %}
