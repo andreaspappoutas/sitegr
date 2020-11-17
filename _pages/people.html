@@ -12,11 +12,11 @@ layout: single
 {% assign people = site.people | sort: "rank" %}
 {% for post in people %}
   {% if post.rank == 1 %}
-      <div id={{ post.ref }}>
+      <div id="{{ post.ref }}">
         {% include archive-people.html %}
       <div>
       <script>
-            document.getElementById('1st-rank').appendChild(document.getElementById( {{ post.ref }} ));
+            document.getElementById('1st-rank').appendChild(document.getElementById( "{{ post.ref }}" ));
       </script>
   {% endif %}
 {% endfor %}
