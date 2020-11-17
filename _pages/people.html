@@ -5,14 +5,17 @@ permalink: "/people/"
 layout: single
 ---
 
+<div id="1st-rank"><h1>1st rank</h1></br>
+</div>
+
+
 {% assign people = site.people | sort: "rank" %}
-{% for test in people %}
-  {% if test.rank == 1 %}
-  <h1>1st Rank</h1>
-    {% for post in people %}
-        {% if post.author == test.author %}
-          {% include archive-people.html %}
-        {% endif %}
-    {% endfor %}
+{% for post in people %}
+  {% if post.rank == 1 %}
+      <script>
+     document.getElementById("1st-rank").insertAdjacentHTML("afterend", 
+                "{% include archive-people.html %}");
+      </script>
+     
   {% endif %}
 {% endfor %}
