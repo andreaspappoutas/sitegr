@@ -5,19 +5,19 @@ permalink: "/people/"
 layout: single
 ---
 
-<div id="1st-rank"><h1>1st rank</h1></br>
+<div id="1st-rank" class="grid-container"><h1>1st rank</h1></br>
 </div>
 </br>
 </br>
 </br>
-<div id="2nd-rank"><h1>2nd rank</h1></br>
+<div id="2nd-rank" class="grid-container"><h1>2nd rank</h1></br>
 </div>
 
 
 {% assign people = site.people | sort: "rank" %}
 {% for post in people %}
   {% if post.rank == 1 %}
-      <div id="{{ post.ref }}" style="float: left;">
+      <div id="{{ post.ref }}" >
         {% include archive-people.html %}
       <div>
       <script>
@@ -25,7 +25,7 @@ layout: single
       </script>
   {% endif %}
   {% if post.rank == 2 %}
-      <div id="{{ post.ref }}" style="float: left;">
+      <div id="{{ post.ref }}" s>
         {% include archive-people.html %}
       <div>
       <script>
