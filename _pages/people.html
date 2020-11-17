@@ -6,17 +6,12 @@ layout: single
 ---
 
 {% assign people = site.people | sort: "rank" %}
-{% if post.rank == 1 %}
+{% for test in people %}
+{% if test.rank == 1 %}
 <h1>1st Rank</h1>
   {% for post in people %}
-    {% include archive-people.html %}
+      {% if post.rank == 1 %}
+        {% include archive-people.html %}
+      {% endif %}
   {% endfor %}
 {% endif %}
-
-{% if post.rank == 2 %}
-<h1>2nd Rank</h1>
-  {% for post in people %}
-    {% include archive-people.html %}
-  {% endfor %}
-{% endif %}
-
