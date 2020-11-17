@@ -8,7 +8,7 @@ layout: single
 {% assign people = site.people | sort: "rank" %}
 {% for post in people %}
   {% if post.rank %}
-    <h1>test</h1>
+    Hello {% post.rank %}
     {% include archive-people.html %}
   {% endif %}
 {% endfor %}  
