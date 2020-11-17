@@ -13,8 +13,9 @@ layout: single
 {% for post in people %}
   {% if post.rank == 1 %}
       <script>
+        var testing= "{% include archive-people.html %}";
      document.getElementById("1st-rank").insertAdjacentHTML("afterend", 
-                "{% include archive-people.html %}");
+                testing);
       </script>
      
   {% endif %}
