@@ -23,6 +23,12 @@ layout: single
 </div>
 
 
+<style>
+.grid-container {
+  grid-gap: 76px;
+}
+</style>
+
 {% assign people = site.people | sort: "rank" %}
 {% for post in people %}
   {% if post.rank == 1 %}
