@@ -19,6 +19,7 @@ layout: single
   display: none;
   float: inherit;
   grid-template-columns: auto auto auto auto;
+  grid-gap: 50px;
 }
 </style>
 
@@ -41,11 +42,6 @@ layout: single
 </div>
 
 
-<style>
-.grid-container {
-  grid-gap: 76px;
-}
-</style>
 
 {% assign people = site.people | sort: "rank" %}
 {% for post in people %}
