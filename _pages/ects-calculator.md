@@ -1,7 +1,7 @@
 ---
-ref: courses
-title: "Μαθήματα"
-permalink: "/courses/"
+ref: ects-calculator
+title: "ECTS"
+permalink: "/ects-calculator/"
 ---
 
 {% include toc title = "ΜΑΘΗΜΑΤΑ" icon = "graduation-cap" %}
