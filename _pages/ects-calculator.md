@@ -4,7 +4,7 @@ title: "ECTS"
 permalink: "/ects-calculator/"
 ---
 
-<script src="/assets/js/main.min.js"></script>
+<script src="/assets/js/ects.js"></script>
 <span id ="toTXT">0</span> <span>ects in total</span></br>
 <span>Απομένουν:  </span><span id="Ta240"></span>
 
