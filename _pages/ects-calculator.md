@@ -116,7 +116,7 @@ permalink: "/ects-calculator/"
 
 ## Μαθήματα Κατεύθυνσης Α.Ε.
 
-{% include collection-sort.html i = 8 l = 'courses' c_type = "H" %}
+{% include ects-collection-sort.html i = 8 l = 'courses' c_type = "H" %}
 
 ## Μαθήματα Επιλογής
 
