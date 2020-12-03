@@ -4,6 +4,10 @@ title: "ECTS"
 permalink: "/ects-calculator/"
 ---
 
+<span id ="toTXT">0</span> <span>ects in total</span></br>
+<span>Απομένουν:  </span><span id="Ta240"></span>
+
+<div id="boxes">
 {% include toc title = "ΜΑΘΗΜΑΤΑ" icon = "graduation-cap" %}
 
 # ΠΡΟΠΤΥΧΙΑΚΟ
@@ -117,16 +121,4 @@ permalink: "/ects-calculator/"
 
 {% include ects-collection-sort.html i = 8 l = 'courses' c_type = "Ο" %}
 
-# ΜΕΤΑΠΤΥΧΙΑΚΟ
-
-## **A' ΕΞΑΜΗΝΟ**
-
-## Μαθήματα Επιλογής
-
-{% include ects-collection-sort.html i = 1 l = 'msc' c_type = "Ο" %}
-
-## **Β' ΕΞΑΜΗΝΟ**
-
-## Μαθήματα Επιλογής
-
-{% include ects-collection-sort.html i = 2 l = 'msc' c_type = "Ο" %}
+</div>
