@@ -3,8 +3,8 @@ ref: ects-calculator
 title: "ECTS"
 permalink: "/ects-calculator/"
 ---
-
-<script src="/assets/js/ects.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/js/ects.js"></script>
 <span id ="toTXT">0</span> <span>ects in total</span></br>
 <span>Απομένουν:  </span><span id="Ta240"></span>
 
