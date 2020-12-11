@@ -11,12 +11,14 @@ permalink: "/ects-calculator/"
 <div id="boxes">
 {% include toc title = "ΜΑΘΗΜΑΤΑ" icon = "graduation-cap" %}
 
-# ΠΡΟΠΤΥΧΙΑΚΟ
+<div markdown="1"> 
+# ΠΡΟΠΤΥΧΙΑΚΟ 
+
 
 ## **A' ΕΞΑΜΗΝΟ**
 
 ## Υποχρεωτικά Μαθήματα
-
+</div>
 {% include ects-collection-sort.html i = 1 l = 'courses' c_type = "M" %}
 
 
