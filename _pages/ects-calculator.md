@@ -257,7 +257,7 @@ permalink: "/ects-calculator/"
 ## Μαθήματα Επιλογής
 </div>
 
-=======
+<div markdown="1"> 
 
 
 ## **A' ΕΞΑΜΗΝΟ**
