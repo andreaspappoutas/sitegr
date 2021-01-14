@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-plugin 'jekyll-pwa-plugin', git: 'https://github.com/andreaspappoutas/jekyll-pwa.git' 
+plugin 'jekyll-pwa-plugin', git: 'https://github.com/lavas-project/jekyll-pwa.git' 
 # gem "github-pages", group: :jekyll_plugins
 
 gem "jekyll","~>4.0.0"
