@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-
+plugin 'jekyll-pwa-plugin', git: 'https://github.com/andreaspappoutas/jekyll-pwa.git' 
 # gem "github-pages", group: :jekyll_plugins
 
 gem "jekyll","~>4.0.0"
@@ -8,7 +8,6 @@ gem "jekyll-remote-theme"
 # gem "minimal-ionio-jekyll", path: '../minimal-ionio'  # FOR LOCAL DEVELOPEMNT ONLY, PLEASE READ THE DOCS
 
 group :jekyll_plugins do
-  gem install jekyll-pwa-plugin -v 2.2.2
   gem "jekyll-paginate"
   gem "jekyll-sitemap"
   gem "jekyll-gist"
