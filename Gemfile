@@ -1,10 +1,11 @@
 source "https://rubygems.org"
-plugin 'jekyll-pwa-plugin', git: 'https://github.com/lavas-project/jekyll-pwa.git' 
+#plugin 'jekyll-pwa-plugin', git: 'https://github.com/lavas-project/jekyll-pwa.git' 
+
 # gem "github-pages", group: :jekyll_plugins
 
 gem "jekyll","~>4.0.0"
 gem "jekyll-remote-theme"
-
+gem 'jekyll-pwa-plugin', git: 'https://github.com/lavas-project/jekyll-pwa'
 # gem "minimal-ionio-jekyll", path: '../minimal-ionio'  # FOR LOCAL DEVELOPEMNT ONLY, PLEASE READ THE DOCS
 
 group :jekyll_plugins do
