@@ -8,7 +8,7 @@ gem "jekyll-remote-theme"
 # gem "minimal-ionio-jekyll", path: '../minimal-ionio'  # FOR LOCAL DEVELOPEMNT ONLY, PLEASE READ THE DOCS
 
 group :jekyll_plugins do
-  gem 'jekyll-pwa-plugin -v 2.2.2'
+  gem install jekyll-pwa-plugin -v 2.2.2
   gem "jekyll-paginate"
   gem "jekyll-sitemap"
   gem "jekyll-gist"
